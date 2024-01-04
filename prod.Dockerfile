@@ -9,7 +9,7 @@ COPY pnpm-lock.yaml .
 RUN pnpm fetch
 
 COPY . .
-RUN pnpm install -f --offline
+RUN pnpm install
 
 
 FROM base_builder as backend
